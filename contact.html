@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – Aivio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 style="font-weight: 800; font-size: 2.2rem; color: #ffffff; text-align: center; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">
+        📩 Contact Us
+      </h1>
+      
+    <p>Have feedback or questions? Reach out below.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="text-to-speech.html">🔊 Text to Speech</a></li>
+      <li><a href="Word Frequency Analyzer.html">🖼️ Word Summarizer/Analyzer</a></li>
+      <li><a href="lorem-ipsum-generator.html">📄 Lorem Ipsum Generator</a></li>
+      <li><a href="about.html">ℹ️ About</a></li>
+      <li><a href="contact.html">📩 Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="container" style="text-align: center; max-width: 700px; margin: auto;">
+        <h2 style="margin-bottom: 20px;">📩 Get in Touch</h2>
+        <p style="font-size: 1rem; line-height: 1.6; font-family: 'Segoe UI', 'Roboto', Arial, sans-serif; color: #333;">
+          We'd love to hear from you! Whether you have feedback, questions, or collaboration ideas — feel free to reach out using the form below. 🙏
+        </p>
+      
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdG7j3ew_Im6Aiu8RNU2roow72Q28_y6GPBjck7TKY3GJV7aQ/viewform?usp=sharing&ouid=104261141819370981039" target="_blank">
+          <button class="btn" style="margin-top: 25px;">Open Contact Form</button>
+        </a>
+      </section>
+      
+  </main>
+  <br><br><br><br>
+  <footer>
+    <p><a href="index.html" style="color: white; text-decoration: none;">← Back to Home</a></p>
+  </footer>
+  
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("form-status").textContent = "✅ Thank you! Your message has been received (simulated).";
+      this.reset();
+    });
+  </script>
+</body>
+</html>

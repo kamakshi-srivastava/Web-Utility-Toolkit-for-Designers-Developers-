@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lorem Ipsum Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+      
+  <header>
+    <h1 style="font-weight: 800; font-size: 2.2rem; color: #ffffff;">
+        📄 Lorem Ipsum Generator
+      </h1>
+      
+    <p>Generate customizable dummy text for design or development.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="text-to-speech.html">🔊 Text to Speech</a></li>
+      <li><a href="Word Frequency Analyzer.html">🖼️ Word Summarizer/Analyzer</a></li>
+      <li><a href="lorem-ipsum-generator.html">📄 Lorem Ipsum Generator</a></li>
+      <li><a href="about.html">ℹ️ About</a></li>
+      <li><a href="contact.html">📩 Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="options">
+      <label for="paragraphs">Paragraphs: <span id="paragraphsValue">1</span></label>
+      <input type="range" id="paragraphs" min="1" max="10" value="1" />
+
+      <label for="words">Words per Paragraph: <span id="wordsValue">10</span></label>
+      <input type="range" id="words" min="5" max="50" value="10" />
+
+      <label for="tags">HTML Tag:</label>
+      <select id="tags"></select>
+
+      <label for="include">Include HTML Tags?</label>
+      <select id="include">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <button id="generate">Generate Lorem Ipsum</button>
+    </div>
+
+    <div class="output">
+      <!-- Generated lorem text will appear here -->
+    </div>
+  </main>
+  <br><br><br><br>
+  <footer>
+    <p><a href="index.html" style="color: white; text-decoration: none;">← Back to Home</a></p>
+  </footer>
+  
+
+  <script src="lorem.js"></script>
+</body>
+</html>

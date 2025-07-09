@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Utility Toolkit</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <header>
+    <h1 style="font-weight: 800; font-size: 2.4rem;">Web Utility Toolkit</h1>
+    <p>Your browser-based creative assistant with AI features.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="text-to-speech.html">🔊 Text to Speech</a></li>
+      <li><a href="Word Frequency Analyzer.html">🖼️ Word Summarizer/Analyzer</a></li>
+      <li><a href="lorem-ipsum-generator.html">📄 Lorem Ipsum Generator</a></li>
+      <li><a href="about.html">ℹ️ About</a></li>
+      <li><a href="contact.html">📩 Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="feature-grid">
+        <div class="feature-card">
+          <h3>🔊 Text to Speech</h3>
+          <p>Convert any written content into spoken words using your browser's built-in speech engine. Great for accessibility, audio previews, or listening to your notes hands-free.</p>
+        </div>
+      
+        <div class="feature-card">
+          <h3>📄 Custom Lorem Ipsum</h3>
+          <p>Generate placeholder content for your web or UI designs with adjustable paragraph count, styles, and tag formats. Includes fun and tech-themed options too!</p>
+        </div>
+      
+        <div class="feature-card">
+          <h3>🧠 Text Summarizer</h3>
+          <p>Paste any paragraph or article and get the top 3 important sentences along with keyword frequency analysis. Perfect for condensing large texts quickly.</p>
+        </div>
+      
+        <div class="feature-card tip-card" id="randomTip">
+          💡 Loading a useful tip for you...
+        </div>
+      </div>
+      
+  </main>
+  
+  <script>
+    const tips = [
+      "You can right-click and copy generated summaries easily.",
+      "Try combining multiple tools for creative workflows.",
+      "Press Ctrl + Enter to quickly trigger form actions (if enabled).",
+      "Dark mode support is coming soon — stay tuned!",
+      "Generated Lorem Ipsum works great for UI mockups!",
+      "Hover over buttons to see subtle interactive effects.",
+      "Your data never leaves your browser — it's 100% frontend!"
+    ];
+  
+    const tipBox = document.getElementById("randomTip");
+    const randomTip = tips[Math.floor(Math.random() * tips.length)];
+    tipBox.innerHTML = `💡 <strong>Tip:</strong> ${randomTip}`;
+  </script>
+
+<script>
+    const tips = [
+      "You can right-click and copy generated summaries easily.",
+      "Try combining multiple tools for creative workflows.",
+      "Press Ctrl + Enter to quickly trigger actions (if supported).",
+      "Generated Lorem Ipsum works great for UI mockups!",
+      "Your data never leaves your browser — 100% frontend!",
+      "Hover over tool cards to discover interactive animations!"
+    ];
+  
+    const tipBox = document.getElementById("randomTip");
+    const randomTip = tips[Math.floor(Math.random() * tips.length)];
+    tipBox.innerHTML = `💡 <strong>Tip:</strong> ${randomTip}`;
+  </script>
+  
+  <br><br><br><br><br><br><br><br><footer>
+    <p>© 2025 AI Toolkit Website – Utilities for Creators/Developers</p>
+  </footer>
+</body>
+</html>

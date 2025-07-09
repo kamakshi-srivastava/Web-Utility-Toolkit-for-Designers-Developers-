@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Text to Speech Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 style="font-weight: 800; font-size: 2.2rem; color: #ffffff; text-align: center; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+        🔊 Text to Speech Converter
+      </h1>
+      
+    <p>Type something and hear it spoken aloud!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="text-to-speech.html">🔊 Text to Speech</a></li>
+      <li><a href="Word Frequency Analyzer.html">🖼️ Word Summarizer/Analyzer</a></li>
+      <li><a href="lorem-ipsum-generator.html">📄 Lorem Ipsum Generator</a></li>
+      <li><a href="about.html">ℹ️ About</a></li>
+      <li><a href="contact.html">📩 Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+      <textarea id="textToConvert" placeholder="Enter text to convert..." rows="6" cols="40"></textarea>
+      <p class="error-para" id="errorMsg"></p>
+      <button class="btn" id="convertBtn">▶️ Play Sound</button>
+    </div>
+  </main>
+  <br><br><br><br>
+  <footer>
+    <p><a href="index.html" style="color: white; text-decoration: none;">← Back to Home</a></p>
+  </footer>
+  
+
+  <script src="tts.js"></script>
+</body>
+</html>

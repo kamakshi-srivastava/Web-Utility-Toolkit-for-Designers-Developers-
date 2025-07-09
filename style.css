@@ -1,0 +1,261 @@
+/* css/style.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D4BEE4;
+    color: #333;
+  }
+  
+  header {
+    background: #3B1E54;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  p {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1rem; /* base size (16px) */
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 1em;
+  }
+  
+  
+  nav {
+    background: #9B7EBD;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+/* Text-to-speech specific styles */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  textarea {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    resize: vertical;
+    font-size: 16px;
+  }
+  
+  .error-para {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3b3b98;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #5353c6;
+  }
+
+  .image-container {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .my-generated-image {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .options {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .options label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .options input[type="range"],
+  .options select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .options button {
+    padding: 12px 20px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .options button:hover {
+    background-color: darkgreen;
+  }
+  
+  .output {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid crimson;
+    margin: 30px auto;
+    max-width: 700px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+    white-space: pre-line;
+  }
+
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: vertical;
+    margin-bottom: 15px;
+  }
+  
+  .output {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: left;
+  }
+
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+  }
+  
+  .feature-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: transform 0.2s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-card h3 {
+    margin-top: 0;
+    color: #3b3b98;
+  }
+
+  
+  .tip-box {
+    margin-top: 40px;
+    background-color: #fff8e1;
+    border-left: 6px solid #f7c948;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-style: italic;
+    font-size: 16px;
+    color: #444;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  }
+
+
+  .tip-card {
+    background-color: #fff8e1;
+    border-left: 6px solid #f7c948;
+    font-style: italic;
+    font-size: 16px;
+    color: #444;
+  }
+  
+  footer p {
+    color: white;
+  }
+  
